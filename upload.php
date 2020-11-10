@@ -41,7 +41,7 @@
 
 				// Output some HTML
 	?>
-		<div class="card text-center py-5 shadow my-5">
+		<div class="card text-center py-5 shadow my-5 container">
 			<h1 class="alert alert-success">Uploaded Your Images Successfully</h1>
 			<small>You can view uploaded images <a href="images.php">here</a> or add a new one <a href="index.html">here</a>.</small>
 		</div>

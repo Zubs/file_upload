@@ -21,7 +21,7 @@
 				$conn = mysqli_connect('localhost', 'root', '', 'file_upload') or die("Unable to connect to db");
 
 				// Fetch images from database
-				$query = "SELECT * FROM images";
+				$query = "SELECT * FROM images ORDER BY date_ DESC";
 
 				// Run the query to actually get the data
 				$data = mysqli_query($conn, $query) or die("Unable to fetch");
