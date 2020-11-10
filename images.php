@@ -28,15 +28,16 @@
 
 				// Display images, by looping over them
 				while ($row = mysqli_fetch_array($data)) {
+					// print_r([$row['name'], $row['image']]);
 			?>
 
 				<!-- I decided to write normal HTML instead of using too many echos -->
 				<div class="col-md-6 px-5 py-5">
 					<div class="card">
 						<div class="card-body">
-							<img src="#" alt="Image will go here" width="100%">
+							<img src="images/<?php echo $row['image']; ?>" alt="Image will go here" width="100%">
 						</div>
-						<div class="card-title">Tets</div>
+						<div class="card-title"><?php echo $row['name']; ?></div>
 					</div>
 				</div>
 			<?php
