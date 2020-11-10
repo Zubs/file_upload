@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My File Upload Project</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="container py-5">
+	<div class="card text-center py-5 shadow my-5">
+		<h1>Upload Your Images</h1>
+		<small>You can view uploaded images <a href="images.php">here</a></small>
+		<br>
+		<br>
+		<form action="upload.php" method="POST" enctype="multipart/form-data" class="container">
+			<input type="text" name="name" class="form-control mb-3" placeholder="Enter Your Name..." required="">
+			<input type="file" name="image" class="form-control mb-3">
+			<input type="submit" value="Upload" class="btn btn-primary form-control">
+		</form>
+	</div>
+</body>
+</html>
