@@ -20,20 +20,18 @@
 			$name = $_POST['name'];
 			$image = $_FILES['image']['name'];
 
-			/*echo $image;
-			return 0;*/
-
 			// Just some additional validation, not like we really need the name
 			if (!empty($name)) {
 
 				// Store the image to the images folder
-				$target = 'images/'.$image;
+				$target = 'images/'.time().$image;
 				move_uploaded_file($_FILES['image']['tmp_name'], $target) or die("Unable to save image");
 
 				// Connect To Database 
 				$connection = mysqli_connect('localhost', 'root', '', 'file_upload') or die("Unable to connect to db");
 
 				// Write the MySQL query here
+				$image = time().$image;
 				$query = "INSERT INTO images VALUES (0, '$name', '$image', now())";
 
 				// Run The Query
