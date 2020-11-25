@@ -28,7 +28,6 @@
 
 				// Display images, by looping over them
 				while ($row = mysqli_fetch_array($data)) {
-					// print_r([$row['name'], $row['image']]);
 			?>
 
 				<!-- I decided to write normal HTML instead of using too many echos -->
