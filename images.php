@@ -11,7 +11,7 @@
 <body class="container py-5">
 	<div class="card text-center py-5 shadow my-5">
 		<h1>Here's all our uploaded images</h1>
-		<small>You can add new images <a href="index.html">here</a></small>
+		<small>You can add new images <a href="index.php">here</a></small>
 		<div class="row">
 
 			<!-- Let's handle logic -->
