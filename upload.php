@@ -28,7 +28,7 @@
 				move_uploaded_file($_FILES['image']['tmp_name'], $target) or die("Unable to save image");
 
 				// Connect To Database 
-				$connection = mysqli_connect('localhost', 'root', '', 'file_upload') or die("Unable to connect to db");
+				$connection = mysqli_connect('ec2-34-237-236-32.compute-1.amazonaws.com', 'slmwwiigjolzdr', 'aa64614642226580add460ac6400dfb4e236786503adda9a52a942e3df4fd5fb', 'file_upload') or die("Unable to connect to db");
 
 				// Write the MySQL query here
 				$image = time().$image;
